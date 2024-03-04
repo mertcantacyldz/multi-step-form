@@ -50,9 +50,11 @@ const Forms: React.FC = () => {
 // Form içerisinde stepler arasında ileri ve geri yapabilmek için kullandığımı fonksiyonlar
   const handleNext = (formValues: FormikProps<FormValuesType>) => {
     formValues.setFieldValue('step', formValues.values.step + 1);
+  
   }
   const handlePrev = (formValues: FormikProps<FormValuesType>) => {
     formValues.setFieldValue('step', formValues.values.step - 1);
+   
   }
 
 

@@ -10,7 +10,7 @@ interface StepProps {
 
 const Step3 : React.FC<StepProps> = ({ formValues })=>{
 
-    const [selectedFramework, setSelectedFramework] = useState<string | null>(null);
+    const [selectedFramework, setSelectedFramework] = useState<string | null>(formValues.values.framework);
 
     const handleCheckBox = (value: string, formValues: FormikProps<FormValuesType>) => {
 
@@ -21,6 +21,7 @@ const Step3 : React.FC<StepProps> = ({ formValues })=>{
     
     
       };
+  
 
     return(
         <>

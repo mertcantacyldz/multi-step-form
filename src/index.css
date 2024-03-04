@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .step-ball{
+     @apply bg-orange1 w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 flex justify-center items-center text-white rounded-full mid:w-9 mid:h-9 text-[8px] lg:text-base font-poppins
+    }
+    .empty-step-ball{
+        @apply bg-[#E5E7EB]  w-4 h-4 sm:w-5 sm:h-5 lg:w-7  lg:h-7 flex justify-center items-center text-[#111827] rounded-full mid:w-9 mid:h-9 text-[8px] lg:text-base font-poppins
+    }
+    .step-line{
+       @apply bg-orange1 w-5 sm:w-14  lg:w-16 h-1 xl:w-26 xl:h-[6px] 3xl:w-36 rounded-[50px] 
+
+    }
+    .empty-step-line{
+        @apply bg-[#E5E7EB] w-5 sm:w-14 lg:w-16 h-1 xl:w-26 3xl:w-36 xl:h-[6px] rounded-[50px]
+    }
+    .step-2{
+           @apply   border-[#D1D5DB] border h-9 lg:h-12  xl:h-12   mid:h-16 large:h-16 3xl:h-[75px]  w-full rounded-[10px] text-[10px]  lg:text-sm font-semibold font-poppins flex items-center  gap-[5%] pl-[5%]
+        
+    }
+
+    .button-pre{
+        @apply border-orange1 border-2 font-poppins text-orange1 rounded-md  lg:rounded-[10px] w-16 h-6 lg:w-28 lg:h-10 text-xs lg:text-base
+    }
+
+    .button-next {
+        @apply border-orange1 border-2 font-poppins text-white  bg-orange1 rounded-md lg:rounded-[10px] w-16 h-6 lg:w-28 lg:h-10 text-xs lg:text-base disabled:opacity-50
+    }
+
+    .label{ 
+
+        @apply font-poppins font-medium  text-[8px] lg:text-[10px] mid:text-sm large:text-base 3xl:text-base
+        
+
+    }
+
+    .step-input{
+        @apply border-[#D1D5DB] rounded-md border mid:rounded-md pl-[3%] mid:h-[40px] h-6 lg:h-8  xl:h-9  large:h-12  3xl:h-14  placeholder:text-justify placeholder:text-[8px] text-[8px] lg:placeholder:text-[10px] lg:text-[10px] large:placeholder:text-sm large:text-sm 3xl:placeholder:text-[18px] 3xl:text-[18px]  focus:border focus:outline-orange1  font-poppins
+    }
+
+    .review-label{
+        @apply font-poppins text-[7px] sm:text-[8px] lg:text-[10px] xl:text-xs large:text-base font-normal text-[#4B5563]
+    }
+    .review-value{
+        @apply font-poppins text-[7px] sm:text-[8px] lg:text-[10px] xl:text-xs large:text-base font-semibold text-[#111827]
+    }
+    .review-box {
+        @apply  xl:w-full h-14 mid:w-full mid:h-18 large:w-48 large:h-24 3xl:w-full bg-review-box rounded-lg flex flex-col justify-center gap-[6px] pl-3  
+    }
+    .error{
+        @apply  text-[7px] large:text-sm text-red-500 block
+    }
+
+}

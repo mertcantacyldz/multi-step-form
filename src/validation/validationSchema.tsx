@@ -7,7 +7,7 @@ const validationSchema:yup.Schema<FormValuesType> = yup.object().shape({
     //step1
   name: yup.string().default("").when('step',{
     is:1,
-    then: schema =>schema.required('Name is required'),
+    then: schema =>schema.required('Name is required'), 
   }),
   email: yup.string().default("").when("step",{
     is:1,
